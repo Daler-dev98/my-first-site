@@ -107,6 +107,33 @@
     transform: translateY(0);
   }
 }
+    .floating-neon-button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: none;
+  border: 2px solid #00ffff;
+  border-radius: 50%;
+  padding: 12px;
+  box-shadow: 0 0 5px #00ffff,
+              0 0 10px #00ffff,
+              0 0 20px #00ffff;
+  cursor: pointer;
+  z-index: 1000;
+  transition: 0.3s;
+}
+
+.floating-neon-button:hover {
+  background-color: #00ffff;
+  box-shadow: 0 0 10px #00ffff,
+              0 0 20px #00ffff,
+              0 0 30px #00ffff;
+}
+
+.floating-neon-button .icon {
+  width: 32px;
+  height: 32px;
+}
 </style>
   <meta charset="UTF-8">
   <title>Мой первый сайт</title>
@@ -137,10 +164,12 @@
   </section>
 
   <button onclick="alert('Ты уже почти как разработчик! 🎉')">Нажми меня</button>
-  <button class="neon-button">Напиши мне</button>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script>
   AOS.init();
+  <a href="https://t.me/kronos_446" target="_blank" class="floating-neon-button" title="Напиши мне в Telegram">
+  <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram" class="icon">
+</a>
 </script>
 </body>
 </html>
@@ -158,6 +187,7 @@
 
   <footer>
     <p>&copy; 2025 Мой первый сайт</p>
+      <button class="neon-button">Напиши мне</button>
   </footer>
 </body>
 </html>
