@@ -39,6 +39,25 @@
   h1, h2 {
     margin: 0 0 10px;
   }
+    body {
+  font-family: 'Roboto', sans-serif;
+}
+    .neon-button {
+  background: none;
+  border: 2px solid #00ffff;
+  color: #00ffff;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;
+  transition: 0.3s;
+}
+
+.neon-button:hover {
+  background-color: #00ffff;
+  color: black;
+}
     nav.dropdown {
   position: relative;
   display: inline-block;
@@ -92,6 +111,8 @@
   <meta charset="UTF-8">
   <title>Мой первый сайт</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -105,7 +126,7 @@
 </nav>
   </header>
 
-  <section id="about">
+  <section id="about" data-aos="fade-up">
     <h2>Обо мне</h2>
     <p>Привет! Меня зовут Далер и я учусь создавать сайты. Мне это нравится!</p>
   </section>
@@ -116,6 +137,11 @@
   </section>
 
   <button onclick="alert('Ты уже почти как разработчик! 🎉')">Нажми меня</button>
+  <button class="neon-button">Напиши мне</button>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
   <main>
