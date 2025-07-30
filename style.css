@@ -97,3 +97,23 @@ body.dark-theme {
   z-index: 1000;
   transition: 0.3s;
 }
+.slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.slider img {
+  height: 200px;
+  border-radius: 10px;
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.slider img:hover {
+  transform: scale(1.05);
+}
