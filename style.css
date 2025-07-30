@@ -131,8 +131,3 @@ body.dark-theme {
 .telegram-btn:hover {
   background: #0077b6;
 }
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
