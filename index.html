@@ -159,5 +159,18 @@
     <p>&copy; 2025 Мой первый сайт</p>
       <button class="neon-button">Напиши мне если есть вопросы </button>
   </footer>
+<script>
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('fade-in');
+      }
+    });
+  });
+
+  document.querySelectorAll('.fade-in').forEach(el => {
+    observer.observe(el);
+  });
+</script>
 </body>
 </html>
