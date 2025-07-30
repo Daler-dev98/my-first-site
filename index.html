@@ -115,6 +115,7 @@
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
+  <button class="theme-toggle" onclick="toggleTheme()">🌙 Тема</button>
   <header>
     <h1>Мой сайт</h1>
     <nav class="dropdown">
@@ -140,6 +141,21 @@
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script>
   AOS.init();
+</script>
+  <script>
+  function toggleTheme() {
+    const body = document.body;
+    if (body.classList.contains('light-theme')) {
+      body.classList.remove('light-theme');
+      body.classList.add('dark-theme');
+    } else {
+      body.classList.remove('dark-theme');
+      body.classList.add('light-theme');
+    }
+  }
+
+  // По умолчанию — светлая тема
+  document.body.classList.add('light-theme');
 </script>
 </body>
 </html>
