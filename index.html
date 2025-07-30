@@ -163,12 +163,14 @@
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('fade-in');
+        entry.target.classList.add(class="fade-in appear"
+);
       }
     });
   });
 
-  document.querySelectorAll('.fade-in').forEach(el => {
+  document.querySelectorAll(class="fade-in appear"
+).forEach(el => {
     observer.observe(el);
   });
 </script>
