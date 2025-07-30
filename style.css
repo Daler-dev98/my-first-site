@@ -68,3 +68,32 @@ button:hover {
   opacity: 1;
   transform: translateY(0);
 }
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.light-theme {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.dark-theme {
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+/* Кнопка переключателя */
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background: #444;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1000;
+  transition: 0.3s;
+}
