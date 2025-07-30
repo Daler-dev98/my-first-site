@@ -117,3 +117,17 @@ body.dark-theme {
 .slider img:hover {
   transform: scale(1.05);
 }
+.telegram-btn {
+  display: inline-block;
+  background: #0088cc;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.telegram-btn:hover {
+  background: #0077b6;
+}
