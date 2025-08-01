@@ -96,7 +96,7 @@ body {
 }
 
 .dark-theme .dropdown-content a {
-  color: #f0f0f0;
+  color: #f0f0f0; !important;
 }
 
 .dark-theme .dropdown-content a:hover {
