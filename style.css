@@ -61,7 +61,7 @@ button:hover {
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
-  transition: all 0.8s ease-out;
+  transition: opacity 1s ease-out, transform 1s easy-out;
 }
 
 .fade-in.appear {
