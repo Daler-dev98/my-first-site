@@ -195,14 +195,13 @@
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.classList.add(class="fade-in appear"
+        entry.target.classList.add('appear');
 );
       }
     });
   });
 
-  document.querySelectorAll(class="fade-in appear"
-).forEach(el => {
+  document.querySelectorAll('.fade-in').forEach(el => {
     observer.observe(el);
   });
 </script>
