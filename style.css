@@ -81,6 +81,16 @@ body.dark-theme {
   background-color: #121212;
   color: #f5f5f5;
 }
+header, section, footer {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-theme header,
+body.dark-theme section,
+body.dark-theme footer {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+}
 
 /* Кнопка переключателя */
 .theme-toggle {
