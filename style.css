@@ -1,8 +1,8 @@
 body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
-  background: linear-gradient(to bottom, #f8f9fa, #e0f7fa);
   text-align: center;
+  tensition: background-color 0.3s, color 0.3s;
 }
 
 header {
@@ -70,6 +70,10 @@ button:hover {
 }
 body {
   transition: background-color 0.3s, color 0.3s;
+}
+.light-theme {
+  background: linear-gradient(to bottom, #f8f9fa, #e0f7fa);
+  color: #333;
 }
 
 /* ТЁМНАЯ ТЕМА */
