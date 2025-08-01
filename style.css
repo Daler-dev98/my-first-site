@@ -72,24 +72,31 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
-body.light-theme {
-  background-color: #f9f9f9;
-  color: #000000;
-}
-
-body.dark-theme {
+/* ТЁМНАЯ ТЕМА */
+.dark-theme {
   background-color: #121212;
-  color: #f5f5f5;
-}
-header, section, footer {
-  transition: background-color 0.3s, color 0.3s;
+  color: #f0f0f0;
 }
 
-body.dark-theme header,
-body.dark-theme section,
-body.dark-theme footer {
+.dark-theme section {
   background-color: #1e1e1e;
-  color: #f5f5f5;
+}
+
+.dark-theme footer {
+  background-color: #1e1e1e;
+  color: #ccc;
+}
+
+.dark-theme .dropdown-content {
+  background-color: #2a2a2a;
+}
+
+.dark-theme .dropdown-content a {
+  color: #f0f0f0;
+}
+
+.dark-theme .dropdown-content a:hover {
+  background-color: #3a3a3a;
 }
 
 /* Кнопка переключателя */
